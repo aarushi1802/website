@@ -1,0 +1,935 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block title %}HOME PAGE{% endblock title %}
+{% block banner_slider %}
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'app/images/banner/banner4.jpg' %}" class="d-block w-100" alt="banner image">
+      </div>
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/banner1.jpg' %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/banner2.jpg' %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/banner3.jpg' %}" class="d-block w-100" alt="banner image">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="{% url "category" "JN" %}carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="{% url "category" "JN" %}carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+{% endblock banner_slider %}
+{% block information %}
+<div class= "container">
+    <div class="row bg-danger text-center p-5 text-white border-bottom shadow">
+        <h1></h1>
+        <small class="fs-3">Meraki offers a wide range of luxe and premium products in both Apparels and Beauty categories.
+        </small>
+    </div>
+
+</div>
+{% endblock information %}
+{% block main-content %}
+<div class="container">
+  <h2 class="text-center">Products</h2>
+ <br></br>
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk smbg">
+        <a href="{% url "category" "JN" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app/images/product/clothes/baggy jeans.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Jeans</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk curdbgpro">
+        <a href="{% url "category" "TS" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app/images/product/clothes/white tshirt.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">T-Shirt
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk buttermilk">
+        <a href="{% url "category" "ST" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app/images/product/clothes/army green shirt.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Shirt</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <br></br>
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk smbg">
+        <a href="{% url "category" "JN" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\clothes\bell bottom jeans.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Jeans</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk curdbgpro">
+        <a href="{% url "category" "TS" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\clothes\black crop tshirt.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">T-Shirt</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk buttermilk">
+        <a href="{% url "category" "TS" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\clothes\black haulter neck top.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">T-Shirt</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br></br>
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk smbg">
+        <a href="{% url "category" "LR" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\clothes\black lowee.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Lowers</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk curdbgpro">
+        <a href="{% url "category" "SK" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\clothes\black skirt .jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Skirt
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk buttermilk">
+        <a href="{% url "category" "SK" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\clothes\black skorts.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Skirt</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br></br>
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk smbg">
+        <a href="{% url "category" "SK" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\clothes\black tennis skirt.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Skirt</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk curdbgpro">
+        <a href="{% url "category" "TS" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\clothes\black tshirt.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">T-Shirt
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk buttermilk">
+        <a href="{% url "category" "TS" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\clothes\blue knitted polo.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">T-Shirt</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br></br>
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk smbg">
+        <a href="{% url "category" "SH" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\clothes\brown shorts.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Shorts</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk curdbgpro">
+        <a href="{% url "category" "SH" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\clothes\camoflage shorts.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Shorts
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk buttermilk">
+        <a href="{% url "category" "SH" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\clothes\cargo shorts.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Shorts</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br></br>
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk smbg">
+        <a href="{% url "category" "LR" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\clothes\combo lowers.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Lowers</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk curdbgpro">
+        <a href="{% url "category" "SH" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\clothes\combo of 4 shorts.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Shorts
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk buttermilk">
+        <a href="{% url "category" "ST" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app/images/product/clothes/cream colour shirt.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Shirt</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br></br>
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk smbg">
+        <a href="{% url "category" "TS" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app/images/product/clothes/crop top combo.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">T-Shirt</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk curdbgpro">
+        <a href="{% url "category" "ST" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app/images/product/clothes/dark grey shirt.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Shirt
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk buttermilk">
+        <a href="{% url "category" "SH" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\clothes\denim shorts.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Short</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br></br>
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk smbg">
+        <a href="{% url "category" "LR" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app/images/product/clothes/green lower.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Lowers</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk curdbgpro">
+        <a href="{% url "category" "SH" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\clothes\grey boxer.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Shorts
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk buttermilk">
+        <a href="{% url "category" "SH" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\clothes\grey shorts.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Shorts</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br></br>
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk smbg">
+        <a href="{% url "category" "JN" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\clothes\slim fit jeans.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Jeans</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk curdbgpro">
+        <a href="{% url "category" "ST" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app/images/product/clothes/grey textured shirt.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Shirt
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk buttermilk">
+        <a href="{% url "category" "TS" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app/images/product/clothes/lilac tshirt.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">T-Shirt</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br></br>
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk smbg">
+        <a href="{% url "category" "JN" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\clothes\straight fit jeans.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Jeans</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk curdbgpro">
+        <a href="{% url "category" "TS" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\clothes\lime green tshirt.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">T-Shirt
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk buttermilk">
+        <a href="{% url "category" "LR" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app/images/product/clothes/off white lower.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Lowers</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br></br>
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk smbg">
+        <a href="{% url "category" "SK" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\clothes\pink floral skirt.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Skirt</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk curdbgpro">
+        <a href="{% url "category" "TS" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\clothes\powder blue tshirt.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">T-Shirt
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk buttermilk">
+        <a href="{% url "category" "SH" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\clothes\rugged denim shorts.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Short</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br></br>
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk smbg">
+        <a href="{% url "category" "JN" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\clothes\straight fit jeans.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Jeans</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk curdbgpro">
+        <a href="{% url "category" "TS" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\clothes\solid white tshirt.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">T-Shirt
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk buttermilk">
+        <a href="{% url "category" "TS" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\clothes\striped tshirt.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">T-Shirt</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br></br>
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk smbg">
+        <a href="{% url "category" "JN" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app/images/product/clothes/wide leg jeans.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Jeans</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk curdbgpro">
+        <a href="{% url "category" "ST" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\clothes\textured blue shirt.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Shirt
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk buttermilk">
+        <a href="{% url "category" "ST" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app/images/product/clothes/white blue shirt.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Shirt</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br></br>
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk smbg">
+        <a href="{% url "category" "TS" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\clothes\white corset top.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">T-Shirt</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk curdbgpro">
+        <a href="{% url "category" "TS" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\clothes\white crop top.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">T-Shirt
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk buttermilk">
+        <a href="{% url "category" "TS" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app/images/product/clothes/white halter neck top.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">T-Shirt</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br></br>
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk smbg">
+        <a href="{% url "category" "SH" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app/images/product/clothes/white shorts.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Shorts</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk curdbgpro">
+        <a href="{% url "category" "SK" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app/images/product/clothes/whits skirts with black bow.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Skirt
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk buttermilk">
+        <a href="{% url "category" "BS" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\makeup\contour stick.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Base</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br></br>
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk smbg">
+        <a href="{% url "category" "BH" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\makeup\cream blush.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Blush</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk curdbgpro">
+        <a href="{% url "category" "BH" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\makeup\liquid blush.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Blush
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk buttermilk">
+        <a href="{% url "category" "SC" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\makeup\face mask.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Skincare</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br></br>
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk smbg">
+        <a href="{% url "category" "BS" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\makeup\foundation.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Base</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk curdbgpro">
+        <a href="{% url "category" "BH" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\makeup\powder blush.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Blush
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk buttermilk">
+        <a href="{% url "category" "LS" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\makeup\lip gloss.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Lips</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br></br>
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk smbg">
+        <a href="{% url "category" "LS" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\makeup\lip oil .jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Lips</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk curdbgpro">
+        <a href="{% url "category" "BS" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\makeup\serum foundation.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Base
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk buttermilk">
+        <a href="{% url "category" "LS" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\makeup\lip oil.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Lips</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br></br>
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk smbg">
+        <a href="{% url "category" "LS" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\makeup\lip tint.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Lips</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk curdbgpro">
+        <a href="{% url "category" "LS" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\makeup\liquid lipstick.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Lips
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk buttermilk">
+        <a href="{% url "category" "HS" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\shoes\ballerina heels.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Heels</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br></br>
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk smbg">
+        <a href="{% url "category" "SN" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\shoes\canvas sneakers.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Sneakers</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk curdbgpro">
+        <a href="{% url "category" "TR" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\shoes\casual trainers white.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Trainers
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk buttermilk">
+        <a href="{% url "category" "BT" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\shoes\block heel boots.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Boots</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br></br>
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk smbg">
+        <a href="{% url "category" "TR" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\shoes\casual trainers black.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Trainers</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk curdbgpro">
+        <a href="{% url "category" "TR" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\shoes\classic black trainers.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Trainers
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk buttermilk">
+        <a href="{% url "category" "HS" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\shoes\glitter gladiators.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Heels</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br></br>
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk smbg">
+        <a href="{% url "category" "SN" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\shoes\high sole sneakers.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Sneakers</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk curdbgpro">
+        <a href="{% url "category" "TR" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\shoes\classic white trainers.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Trainers
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk buttermilk">
+        <a href="{% url "category" "SN" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\shoes\korean style sneakers.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Sneakers</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br></br>
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk smbg">
+        <a href="{% url "category" "HS" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\shoes\mary jane heels.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Heels</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk curdbgpro">
+        <a href="{% url "category" "HS" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\shoes\pumps.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Heels
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk buttermilk">
+        <a href="{% url "category" "SN" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\shoes\sneakers.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Sneakers</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br></br>
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk smbg">
+        <a href="{% url "category" "TM" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\trimmers\body hair trimmer.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Trimmer</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk curdbgpro">
+        <a href="{% url "category" "TM" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\trimmers\facial trimmer.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Trimmer
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="goodnesssec buttermilk buttermilk">
+        <a href="{% url "category" "TM" %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static "app\images\product\trimmers\trimmer.jpg" %}"
+            class="img-responsive" alt="">
+            <p class="mlkpro">Trimmer</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<br></br>
+
+{% endblock main-content %}
